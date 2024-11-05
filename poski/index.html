@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart AI Drawing Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="toolbar">
+        <input type="color" id="colorPicker" value="#000000" title="Choose a color">
+        <button id="clearButton">Clear</button>
+        <button id="undoButton">Undo</button>
+        <button id="aiSuggestButton">AI Suggest Color</button>
+        <input type="text" id="commandInput" placeholder="Type command here..." />
+        <button id="executeCommandButton">Execute Command</button>
+    </div>
+    <canvas id="drawingBoard"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>

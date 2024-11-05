@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family: 'Garamond', 'Times New Roman', serif; /* Classic serif font */
+    background-color: #f3f2ef; /* Soft, vintage paper color */
+    color: #333333; /* Dark gray for a classic text color */
+}
+
+#toolbar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px;
+    background-color: #e0e0e0; /* Light gray background for toolbar */
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+}
+
+#colorPicker {
+    width: 45px;
+    height: 35px;
+    border: 2px solid #666; /* Classic, darker border */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 18px;
+    font-size: 16px;
+    font-family: inherit;
+    color: #ffffff;
+    background-color: #5f4b8b; /* Elegant purple tone */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for buttons */
+}
+
+button:hover {
+    background-color: #473a63; /* Darker purple on hover */
+    transform: scale(1.05); /* Slight enlarge on hover for an interactive feel */
+}
+
+#commandInput {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #5f4b8b; /* Match with button color */
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#commandInput:focus {
+    border-color: #473a63; /* Darker border on focus */
+}
+
+#drawingBoard {
+    border: 2px solid #473a63;
+    background-color: #ffffff;
+    cursor: crosshair;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow for canvas depth */
+    width: 80vw;
+    height: 70vh;
+}
