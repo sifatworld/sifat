@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Page</title>
+    <title>Smart AI Drawing Board</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="profile-container">
-        <img src="sifat.jpg" alt="Profile Photo" class="profile-photo">
-        <h1>Sifat Islam</h1>
-        <p>Age: 18</p>
-        <p>Address: Rajshahi, Bangladesh</p>
-        <p>Phone: +8801776098192</p>
-        <a href="https://www.facebook.com/sifat64531?mibextid=ZbWKwL" target="_blank">Facebook Profile</a>
+    <div id="toolbar">
+        <input type="color" id="colorPicker" value="#000000" title="Choose a color">
+        <button id="clearButton">Clear</button>
+        <button id="undoButton">Undo</button>
+        <button id="aiSuggestButton">AI Suggest Color</button>
+        <input type="text" id="commandInput" placeholder="Type command here..." />
+        <button id="executeCommandButton">Execute Command</button>
     </div>
+    <canvas id="drawingBoard"></canvas>
     <script src="script.js"></script>
 </body>
 </html>
