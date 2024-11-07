@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fbeaec; /* Soft, romantic pink background */
+    font-family: 'Georgia', serif;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 2s ease;
+}
+
+.main-heading {
+    font-size: 3em;
+    color: #b56576;
+    margin-bottom: 10px;
+}
+
+.intro-text {
+    font-size: 1.5em;
+    color: #6d6875;
+    margin-bottom: 30px;
+}
+
+button {
+    font-size: 1.2em;
+    padding: 15px 30px;
+    background-color: #ffaaa5;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff8a80;
+}
+
+/* Popup styling */
+.popup {
+    display: none; /* Hidden initially */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+.popup-content h2 {
+    color: #b56576;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.popup-content p {
+    color: #6d6875;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.button-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+#yesButton, #noButton {
+    font-size: 1.2em;
+    padding: 10px 25px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#yesButton {
+    background-color: #f77f00;
+}
+
+#yesButton:hover {
+    background-color: #d65700;
+}
+
+#noButton {
+    background-color: #b56576;
+}
+
+#noButton:hover {
+    background-color: #94495d;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
